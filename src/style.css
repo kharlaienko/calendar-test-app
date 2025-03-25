@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+:root {
+   font-family: "Source Sans Pro", sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+
+   --text-color: #43425d;
+   --control-group-border: #d7dae2;
+   --primary: #3b86ff;
+   --card-color: #fff;
+
+   --active-cell: #eaf0f4;
+
+   --vuecal-primary-color: #eaf0f4;
+
+   --secondary: #6a6996;
+
+   --red: #ff5f5f;
+
+   color: var(--text-color);
+
+   background: #f0f0f7;
+}
+
+.vuecal {
+   --vuecal-headings-bar-height: 40px !important;
+   --vuecal-border-radius: 0;
+}
+
+.day-item {
+   padding: 10px 2px !important;
+}
+
+.vuecal__weekday {
+   border-left: unset !important;
+   border-right: unset !important;
+   background-color: var(--active-cell) !important;
+   font-size: 11px;
+   height: 45px;
+   color: #a3a6b4;
+}
+.vuecal__weekday > span {
+   text-transform: uppercase !important;
+}
+
+.vuecal__cell {
+   border-color: var(--active-cell) !important;
+   padding: 2px !important;
+}
+
+.custom-calendar {
+   border: none !important;
+   box-shadow: none !important;
+}
+
+.vuecal__cell-date,
+.vuecal__cell {
+   background-color: white !important;
+}
+
+.vuecal__cell--today,
+.vuecal__cell--today .vuecal__cell-date {
+   background-color: var(--active-cell) !important;
+}
+
+.vuecal__cell-date {
+   color: var(--text-color) !important;
+   font-weight: 400 !important;
+}
+
+.vuecal__event {
+   border-radius: 4px !important;
+}
+
+.vuecal--month-view .vuecal__cell {
+   padding: 17px 13px;
+   min-height: 100px;
+   max-height: 135px;
+   overflow-y: auto;
+}
+
+.vuecal--month-view .vuecal__cell-events {
+   width: 100%;
+}
+
+.vuecal--month-view .vuecal__cell--has-events {
+   flex-direction: column;
+   align-items: end !important;
+}
+
+.vuecal--default-theme .vuecal__header {
+   background-color: transparent !important;
+   color: unset !important;
+}
+
+.vuecal--month-view .vuecal__cell:hover {
+   transform: scale(0.99);
+   box-shadow: 0px 3px 6px #00000029;
+}
+
+.card {
+   box-shadow: 0px 2px 6px #0000000a;
+   background-color: var(--card-color);
+}
+
+.text-big-2 {
+   font-size: 28px;
+}
+
+.text-big {
+   font-size: 18px;
+}
+
+.text-default-2 {
+   font-size: 15px;
+}
+
+.text-default {
+   font-size: 13px;
+}
+
+.font-normal {
+   font-weight: 400;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+   background: none;
+   color: inherit;
+   border: none;
+   padding: 0;
+   font: inherit;
+   cursor: pointer;
+   outline: inherit;
+}
+
+html,
+body,
+p {
+   margin: 0;
+   padding: 0;
+}
