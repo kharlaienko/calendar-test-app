@@ -21,7 +21,7 @@
       emit("confirm", {
          ...props.item,
          start: newTime,
-         end: newTime.setHours(newTime.getHours() + 1),
+         end: new Date(newTime.setHours(newTime.getHours() + 1)),
          title: formData.title,
          bgColor: formData.color,
       });
