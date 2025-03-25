@@ -5,4 +5,7 @@ import svgLoader from 'vite-svg-loader'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), svgLoader()],
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/calendar-test-app/'
+    : '/'
 })
