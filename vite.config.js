@@ -4,6 +4,6 @@ import svgLoader from 'vite-svg-loader'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/calendar-test-app/',
   plugins: [vue(), svgLoader()],
-  base: '/calendar-test-app/'
 })
